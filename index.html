@@ -1,57 +1,347 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>boi gore</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>home</a></li>
-                      <li><a>Listed Books</a></li>
-                      <li><a>Pages to Read</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>home</a></li>
-                    <li><a>listed book</a></li>
-                    <li><a>pages to read</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div>
+      <!-- this is a naveber section  -->
+      <div class="sticky top-0 z-20">
+        <div class="navbar bg-base-100 ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </nav>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>home</a></li>
+                <li><a>Listed Books</a></li>
+                <li><a>Pages to Read</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">boi bore</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>home</a></li>
+              <li><a>listed book</a></li>
+              <li><a>pages to read</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn capitalize bg-[#23BE0A] text-white">login</a>
+            <a class="btn capitalize bg-[#59C6D2]">sign up</a>
+          </div>
+        </div>
+      </div>
+      <!-- this is a banner section  -->
+      <div class="w-12/12  lg:w-11/12 m-auto bg-base-200 py-24 rounded-lg">
+        <div class="hero-content flex-col lg:flex-row-reverse justify-evenly">
+          <div class="w-6/12 md:w-3/12">
+            <img src="./image/bannerBook.png" class=" " />
+          </div>
+          <div class=" ">
+            <h1 class="text-3xl md:text-5xl font-bold text-center md:text-left">
+              Books to freshen up <br />
+              your bookshelf
+            </h1>
+            <div class="text-center md:text-start">
+              <button class="btn bg-[#23BE0A] mt-5">View The List</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-
-    
-</body>
+    <main>
+      <!-- this is a card  section  -->
+      <h1 class="text-center text-lg font-semibold pt-10 pb-5">books</h1>
+      <div class="w-12/12 md:w-10/12 m-auto z-10 grid  gap-10 md:grid-cols-3">
+         <!-- this is a card 1 section  -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/bannerBook.png"
+              alt="Shoes"
+              class="rounded-xl w-9/12 md:w-9/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card 2 section  -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi1.png"
+              alt="Shoes"
+              class="rounded-xl w-9/12 md:w-11/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 3 -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi3.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-9/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 4 -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi15.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-10/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 5  -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi14.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-11/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div> 
+         <!-- this is a card  section 6 -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi6.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-7/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 7  -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi7.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-11/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 8 -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi8.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-8/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- this is a card  section 9 -->
+        <div class="card bg-base-100 w-80 shadow-xl border-2">
+          <figure class="px-10 py-10  bg-[#F3F3F3] mx-5 my-5 rounded-xl">
+            <img
+              src="./image/boi16.png"
+              alt="Shoes"
+              class="rounded-xl w-8/12 md:w-9/12"
+            />
+          </figure>
+          <div class="flex text-start my-5 pl-5">
+            <button class="btn rounded-full mr-2 text-[#23BE0A]">
+              Young Adult
+            </button>
+            <button class="btn rounded-full text-[#23BE0A]">identity</button>
+          </div>
+          <div class="text-start px-10">
+            <h2 class="card-title">The Catcher in the Rye</h2>
+            <p class="py-5 border-b-2 border-dashed">By : Awlad Hossain</p>
+          </div>
+          <div class="flex justify-between  px-10 py-5">
+            <h2>Fiction</h2>
+            <div class="flex justify-between ">
+              <h2 class=" pr-5">5.00</h2>
+              <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
