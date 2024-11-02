@@ -1,110 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>book vibe</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body>
-    <header> 
-        <!-- this is a navber section   -->
-        <div class="sticky top-0 z-20">
-            <div class="navbar bg-base-100">
-              <div class="navbar-start">
-                <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16"
-                      />
-                    </svg>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow px-1  text-xl font-semibold"
-                  >
-                    <li><a href="./index.html">home</a></li>
-                    <li><a>Listed Books</a></li>
-                    <li><a>Pages to Read</a></li>
-                  </ul>
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!-- this is a navber section   -->
+      <div class="sticky top-0 z-20">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow px-1 text-xl font-semibold"
+              >
+                <li><a href="./index.html">home</a></li>
+                <li><a>Listed Books</a></li>
+                <li><a>Pages to Read</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-bold">Book Vibe</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl font-semibold">
+              <li><a href="./index.html">home</a></li>
+              <li><a>listed book</a></li>
+              <li><a>pages to read</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn capitalize bg-[#23BE0A] text-white">login</a>
+            <a class="btn capitalize bg-[#59C6D2]">sign up</a>
+          </div>
+        </div>
+      </div>
+      <!-- this is a banner section  -->
+      <div class="w-11/12 m-auto bg-white">
+        <div class="hero-content flex flex-col lg:flex-row justify-between">
+          <img
+            src="./image/bannerBook.png"
+            class="max-w-sm rounded-lg bg-base-200 p-10 m-10"
+          />
+          <div class="ml-5">
+            <h1 class="text-3xl font-bold">The Catcher in the Rye</h1>
+            <h2 class="text-xl font-semibold">By : Awlad Hossain</h2>
+            <p class="text-lg py-5 border-y-2">Fiction</p>
+            <span class="py-5 text-sm">
+              <h2 class="font-bold mr-2">Review :</h2>
+              Sit amet consectetur. Interdum porta pulvinar non sit aliquam.
+              Aenean pulvinar blandit vel non enim elementum penatibus
+              pellentesque ac. Nec accumsan euismod nulla adipiscing lectus.
+              Morbi elementum a auctor erat diam tellus. Fermentum faucibus
+              nulla enim ornare. Id neque neque pretium enim platea urna non
+              dictum. Faucibus dignissim ridiculus nibh tristique massa non.
+            </span>
+            <div class="flex text-start my-5 pl-5 border-b-2 pb-5">
+              <h2 class="font-semibold pt-3 pr-10">Tag</h2>
+              <button class="btn rounded-full mr-2 text-[#23BE0A]">
+                Young Adult
+              </button>
+              <button class="btn rounded-full text-[#23BE0A]">identity</button>
+            </div>
+            <div class=" ">
+              <div class="flex justify-between w-7/12 pb-2">
+                <!-- text-1  -->
+                <div class=" ">
+                  <h1>Number of Pages:</h1>
+                  <h1>Publisher:</h1>
+                  <h1>Year of Publishing:</h1>
+                  <h1>Rating:</h1>
                 </div>
-                <a class="btn btn-ghost text-3xl font-bold">Book Vibe</a>
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1  text-xl font-semibold">
-                  <li><a href="./index.html">home</a></li>
-                  <li><a>listed book</a></li>
-                  <li><a>pages to read</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end">
-                <a class="btn capitalize bg-[#23BE0A] text-white">login</a>
-                <a class="btn capitalize bg-[#59C6D2]">sign up</a>
+                <!-- text-2  -->
+                <div class=" ">
+                  <h2 class="font-bold">281</h2>
+                  <h2 class="font-bold">J.B Lippincott & Co.</h2>
+                  <h2 class="font-bold">1960</h2>
+                  <h2 class="font-bold">4.8</h2>
+                </div>
               </div>
             </div>
+            <button class="btn bg-white">read</button>
+            <button class="btn bg-[#50B1C9]">Wishlist</button>
           </div>
-          <!-- this is a banner section  -->
-          <div class=" w-11/12 m-auto bg-white  ">
-            <div class=" hero-content flex flex-col lg:flex-row justify-between">
-              <img
-                src="./image/bannerBook.png"
-                class="max-w-sm  rounded-lg bg-base-200 p-10 m-10" />
-              <div class=" ml-5">
-                <h1 class="text-3xl font-bold">The Catcher in the Rye</h1>
-                <h2 class="text-xl font-semibold">By : Awlad Hossain</h2>
-                <p class=" text-lg py-5 border-y-2">Fiction</p>
-                <span class="py-5 text-sm ">
-                    <h2 class=" font-bold mr-2 "> Review :</h2> Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac. Nec accumsan euismod nulla adipiscing lectus. Morbi elementum a auctor erat diam tellus. Fermentum faucibus nulla enim ornare.
-                    Id neque neque pretium enim platea urna non dictum. Faucibus dignissim ridiculus nibh tristique massa non.
-                </span> 
-                <div class="flex text-start my-5 pl-5 border-b-2 pb-5">
-                    <h2 class=" font-semibold pt-3 pr-10">Tag</h2>
-                    <button class="btn rounded-full mr-2 text-[#23BE0A]">
-                      Young Adult
-                    </button>
-                    <button class="btn rounded-full text-[#23BE0A]">identity</button>
-                  </div>
-                    <div class=" ">
-                        <div class=" flex justify-between w-7/12 pb-2">
-                            <!-- text-1  -->
-                            <div class=" ">
-                                <h1>Number of Pages:</h1>
-                                <h1>Publisher:</h1>
-                                <h1 >Year of Publishing:</h1>
-                                <h1>Rating:</h1>
-                            </div>
-                             <!-- text-2  -->
-                            <div class=" ">
-                                <h2 class=" font-bold">281</h2>
-                                <h2 class=" font-bold">J.B Lippincott & Co.</h2>
-                                <h2 class=" font-bold">1960</h2>
-                                <h2 class=" font-bold"> 4.8</h2>
-                            </div>
-                        </div>
-                    </div>
-                <button class="btn bg-white ">read</button>
-               <button class="btn bg-[#50B1C9] ">Wishlist</button>
-              </div>
-            </div>
-          </div>
-
+        </div>
+      </div>
     </header>
-    
-</body>
+  </body>
 </html>
